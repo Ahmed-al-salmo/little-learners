@@ -1,0 +1,122 @@
+.footer-container *{
+    background-color: transparent;
+}
+.footer-container{
+
+    width: 80%;
+    background-color: white;
+    color:#222;
+    padding:50px;
+    margin: 0px auto 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 6px 6px 0px 2px black;
+}
+.footer-container .sub-container1{
+    display: flex;
+    justify-content: center;
+    /* gap: 10px; */
+}
+.footer-container p{
+    font-size: 16px ;
+}
+.footer-container .logo-container{
+    width:500px
+
+}
+.footer-container .sub-container1 div p
+{
+    font-size: 16px;
+    margin:15px 0px
+}
+.footer-container .sub-container1 div div
+{
+    font-size: 16px;
+    margin:5px 0px;
+    
+}
+.footer-container .logo-container  .phone-number,
+.footer-container .logo-container  .email,
+.footer-container .logo-container  .location
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.footer-container .logo-container  .phone-number div,
+.footer-container .logo-container  .email div,
+.footer-container .logo-container  .location div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:25px;
+    height:25px;
+    background-color: #FFF5F0 ;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.footer-container .footer-home,
+.footer-container .footer-academics,
+.footer-container .footer-Contact,
+.footer-container .footer-aboutus{
+    width:226px
+}
+
+.sub-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 20px 0px;
+    color:#333333;
+}
+.sub-container2 .sub-container2-icon{
+    display: flex;
+    gap:10px;
+}
+.sub-container2 .sub-container2-icon div{
+    width:48px;
+    height:48px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color:#FFF5F0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.sub-container3{
+    font-size: 16px;
+    color: #656567;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+@media screen and (max-width:992px) {
+    .sub-container2 .sub-container2-icon{
+        margin-top: 20px;
+    }
+    .footer-container{
+        width:80%;
+        padding:20px;
+    }
+    .sub-container1{
+        flex-wrap: wrap;
+    }
+    .sub-container2{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:576px) {
+    .footer-container{
+        width:80%;
+        padding:20px;
+    }
+    .sub-container1{
+        flex-direction: column;
+        
+    }
+}

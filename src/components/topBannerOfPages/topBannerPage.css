@@ -1,0 +1,23 @@
+.topBannerPage-container{
+    width:992px;
+    margin: auto;
+    text-align: center;
+}
+.topBannerPage-container button{
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+.topBannerPage-container p{
+    font-size: 14px;
+}
+.topBannerPage-container h4{
+    margin:20px 0px
+}
+
+@media screen and (max-width:1200px) {
+    .topBannerPage-container{
+
+        width:80%
+    }
+}

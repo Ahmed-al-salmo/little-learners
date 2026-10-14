@@ -1,0 +1,32 @@
+.image-design{
+    background-color: transparent;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px 3px #FFBE99;
+}
+.image-design-cercil {
+    width : 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+}
+.cercil1{
+    top: -4px;
+    left: -4px;
+}
+.cercil2{
+    right: -4px;
+    top: -4px;
+}
+.cercil3{
+    right: -4px;
+    bottom: -4px;
+}
+.cercil4{
+    left:-4px;
+    bottom: -4px;
+}

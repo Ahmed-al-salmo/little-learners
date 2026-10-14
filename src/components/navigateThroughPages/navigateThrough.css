@@ -1,0 +1,10 @@
+.navigateThrough-container{
+    margin-top:100px ;
+}
+
+.card-navigateThrough-container{
+    margin:100px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

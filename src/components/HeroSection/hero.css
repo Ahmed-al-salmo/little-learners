@@ -1,0 +1,19 @@
+.hero-section{
+    /* background-color: red; */
+    margin: 36px 81px ;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+@media screen and (max-width:992px) {
+    .hero-section{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+@media screen and (max-width:576px) {
+    .hero-section{
+        margin: 36px 10px ;
+    }
+}

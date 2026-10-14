@@ -1,0 +1,27 @@
+.academics-container{
+    margin-top:100px ;
+}
+.card-academics-container{
+    margin:100px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.arrow-icon{
+    font-size: 16px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: #222;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+
+.card-academics-wrapper{
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-around;
+}

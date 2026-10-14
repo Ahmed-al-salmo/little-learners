@@ -1,0 +1,126 @@
+.about-card *,
+.academics-card *,
+.navigateThrough-card *{
+    background-color: transparent;
+}
+.about-card,.academics-card,.navigateThrough-card{
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 40px 50px;
+    position: relative;
+    box-shadow: 6px 6px 0px 2px black;
+    margin: 20px;
+    background-color: white;
+}
+.about-card{
+    width:500px
+}
+.about-card .icon-card{
+    width:54px;
+    height: 54px;
+    background-color: #FFDECC;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    top: -27px;
+    border: 1px solid black;
+}
+.about-card .icon-card *{
+    background-color: transparent;
+}
+.title-card{
+    font-size: 28px;
+    padding: 15px 0px;
+}
+.paragraph-card{
+    font-size: 16px;
+    color:#2e2e2e;
+    width:80%;
+    margin: auto;
+}
+.academics-card{
+    text-align: center;
+}
+.academics-card .icon-card{
+    margin: auto;
+    width:54px;
+    height: 54px;
+    background-color: #FFDECC;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    top: -27px;
+    border: 1px solid black;
+}
+.star-icon{
+    font-size: 16px;
+    color:#FF8D4D;
+    margin-bottom: 10px;
+}
+
+
+.navigateThrough-card{
+    width:35%;
+    /* width:733px; */
+    text-align: center;
+    background-color: white;
+}
+.design-line{
+    display: flex;
+    gap: 20px;
+    /* background-color: red; */
+    position: relative;
+    width: 80%;
+    margin:0px auto 20px;
+    ;
+}
+.design-line .line{
+    border:2px solid black;
+    width:100%;
+    box-shadow: 0px 0px 5px 4px #FFBE99
+}
+.design-line .circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    top:-5px;
+}
+.design-line  .circle2{
+    right: 0;
+}
+
+.card-button{
+    background-color: #FFDECC;
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 4px 4px 0px 2px black;
+    margin:40px 0px 0px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+    .about-card,.academics-card,.navigateThrough-card{
+        width: 30%;
+        margin:20px 10px;
+        padding:40px 30px
+    }
+}
+@media screen and (max-width:576px) {
+
+    .about-card,.academics-card,.navigateThrough-card{
+        width: 90%;
+        margin:20px 10px;
+        padding:40px 30px
+    }
+}

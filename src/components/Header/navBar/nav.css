@@ -1,0 +1,90 @@
+.nav{
+    border: 2px solid #222;
+    border-radius: 5px;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: space-between;
+    margin-top: 5px;
+    background-color: white;
+}
+ .nav  .icon-container{
+    background-color: #FF8D4D;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    padding: 0px 20px;
+    border:1px solid #222;
+ }
+ .nav  .icon-container p{
+    background-color: transparent;
+ }
+.nav .navBar-ul{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.nav .navBar-ul li{
+    padding:10px 20px;
+    border: 1px solid #222;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.nav .navBar-ul li:hover{
+    background-color: #FFAE80;
+}
+
+.menue-nav{
+    display: none;
+    padding:10px  20px;
+
+    font-size:20px;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+.menue-nav-list{
+    width: 300px;
+    background-color: white;
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: all 0.5s;
+}
+.menue-nav-list-ul{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+.menue-nav-list-ul .icon{
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+.menue-nav-list-ul .icon:hover{
+    color:#555;
+}
+.menue-nav-list-ul li{
+    background-color: transparent;
+    list-style: none;
+    padding: 20px ;
+    margin: 10px 0px;
+}
+.menue-nav-list-ul li:hover{
+    background-color: #BBB;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width:992px) {
+    .nav .navBar-ul{
+        display: none;
+    }
+    .menue-nav{
+        display: block;
+    }
+}

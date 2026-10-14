@@ -1,0 +1,49 @@
+.quationCard *{
+    background-color: transparent;
+}
+.quationCard{
+    margin: 10px 0px;
+    width:45%;
+    border: 1px solid #222;
+    border-radius: 8px;
+    overflow: hidden;
+    /* margin:100px 81px; */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+.quationCard-content{
+    width: 90%;
+}
+.quationCard-content p{
+    font-size: 16px;
+    color: #222;
+    line-height: 1.5;
+    padding: 10px 0px;
+}
+.BTN-showORhide{
+    background-color: #FFEFE5;
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #222;
+    cursor: pointer;
+}
+
+@media screen and (max-width:992px) {
+    .quationCard{
+        width:40%;
+       
+    }
+}
+@media screen and (max-width:576px) {
+    .quationCard{
+        width:95%;
+       
+    }
+}
