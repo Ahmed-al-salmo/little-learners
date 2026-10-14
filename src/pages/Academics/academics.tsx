@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './academics.css'
 import TopBannerOfPage from '../../components/topBannerOfPages/topBannerPage';
 import Card from "../../components/card/card";
@@ -14,9 +14,11 @@ interface CardType {
 
 
 export default function Academics(){
-
-    let size = window.innerWidth
+    let size = window.innerWidth;
     let count = size<=576? 1:size<=992? 2:3
+    const [startAt,setStartAt]= useState(0);
+    const [endAt, setEndAt]=useState(count)
+
     const topBannerData ={
         BTN:'Their Happy Words 🤗',
         title:'Our Testimonials',
@@ -56,6 +58,19 @@ export default function Academics(){
         },
     ]
 
+    const moveLeft =()=>{
+        if(startAt!==0){
+            setStartAt(startAt-1);
+            setEndAt(endAt-1)
+        }
+    }
+
+    const moveRight =()=>{
+        if(cards.length>endAt){
+            setStartAt(startAt+1);
+            setEndAt(endAt+1)
+        }
+    }
 
     return(
         <div className="academics-container">
@@ -65,12 +80,12 @@ export default function Academics(){
                 paragraph={topBannerData.paragraph}
             />
             <div className="card-academics-container">
-                <FaArrowLeft className="arrow-icon"/>
+                <FaArrowLeft className="arrow-icon"  onClick={moveLeft} />
                 <div className="card-academics-wrapper">
                 {
                     cards.map((item,index)=>(
                         
-                        index < count &&
+                        index-startAt < count && index>= startAt && index<=endAt&&
                         <Card 
                             key={index}
                             className='academics-card'
@@ -81,7 +96,7 @@ export default function Academics(){
                         />
                     ))
                 }</div>
-                <FaArrowRight className="arrow-icon"/>
+                <FaArrowRight className="arrow-icon" onClick={moveRight} />
             </div>
         </div>
     )
