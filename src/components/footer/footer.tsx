@@ -21,7 +21,7 @@ export default function Footer(){
                         <img src="./src/assets/icon2.png" alt="" height={40} />
                         
                     </h4>
-                    <p>We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
+                    <p>We believe in the power of play to foster creativity, problem solving skills, and imagination.</p>
                     <div className="phone-number "> <div className="icon"><FaPhone /></div> +91 91813 23 2309</div>
                     <div className="location"> <div className="icon"><FaLocationDot /></div> Somewhere in the World</div>
                     <div className="email"> <div className="icon"><MdEmail /></div> hello@littlelearners.com</div>

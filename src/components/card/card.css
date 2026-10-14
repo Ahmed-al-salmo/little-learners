@@ -108,13 +108,21 @@
     margin:40px 0px 0px;
     cursor: pointer;
 }
-
+@media screen and (max-width:1920px) {
+    .academics-card{
+        width: 300px;
+        padding:20px 20px
+    }
+}
 @media screen and (max-width:1200px) {
     .about-card,.academics-card,.navigateThrough-card{
         width: 30%;
         margin:20px 10px;
         padding:40px 30px
     }
+    /* .academics-card{
+        padding: 15px 15px;
+    } */
 }
 @media screen and (max-width:576px) {
 

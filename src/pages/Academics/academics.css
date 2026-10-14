@@ -4,7 +4,7 @@
 .card-academics-container{
     margin:100px 0px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .arrow-icon{
@@ -17,11 +17,34 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
-
+    margin:0px 20px;
 }
 
 .card-academics-wrapper{
     display: flex;
     /* background-color: red; */
-    justify-content: space-around;
+    justify-content: center;
+    width: fit-content;
+}
+
+/* @media screen and (max-width:1200px) {
+    .card-academics-wrapper{
+        width:80%
+    }
+} */
+
+@media screen and (max-width:576px){
+    .arrow-icon{
+        position: absolute;
+        bottom: -50px;
+    }
+    .card-academics-container{
+        position: relative;
+    }
+    .left-arrow{
+        left:30%;
+    }
+    .right-arrow{
+        right:30%
+    }
 }

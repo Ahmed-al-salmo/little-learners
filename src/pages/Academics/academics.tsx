@@ -80,7 +80,7 @@ export default function Academics(){
                 paragraph={topBannerData.paragraph}
             />
             <div className="card-academics-container">
-                <FaArrowLeft className="arrow-icon"  onClick={moveLeft} />
+                <FaArrowLeft className="arrow-icon left-arrow"  onClick={moveLeft} />
                 <div className="card-academics-wrapper">
                 {
                     cards.map((item,index)=>(
@@ -96,7 +96,7 @@ export default function Academics(){
                         />
                     ))
                 }</div>
-                <FaArrowRight className="arrow-icon" onClick={moveRight} />
+                <FaArrowRight className="arrow-icon right-arrow" onClick={moveRight} />
             </div>
         </div>
     )
