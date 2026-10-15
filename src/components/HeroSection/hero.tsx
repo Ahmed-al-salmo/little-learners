@@ -2,6 +2,7 @@ import React from "react";
 import './hero.css';
 import Image from "./imageContainer/image";
 import HeroText from "./containerText/containerHeroText";
+import image1 from '../../assets/image1.png';
 
 interface HeroProps {
     image: string,
@@ -15,7 +16,7 @@ interface HeroProps {
 
 export default function Hero(){
     const containerHeroItems:HeroProps ={
-        image: './src/assets/image1.png',
+        image: image1,
         paragraph1: 'Welcome to little learners academy!',
         paragraph2: 'Where Young Mindes Blossom and ',
         paragraph2_1: 'Dreams Take Flight ',
